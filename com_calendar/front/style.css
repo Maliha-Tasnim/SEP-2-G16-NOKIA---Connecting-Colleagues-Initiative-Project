@@ -1,0 +1,199 @@
+/* The font for the body text. */
+/* Work Sans */ 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+
+/* The color palette of the website. */
+
+:root {
+    --primary-color: #2D3F89;
+    --darker-primary-color: #161F44;
+    --secondary-color: #ffffff;
+    --accent-color: #456EAF;
+}
+
+
+/* Genral settings for the page. */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
+    color: var(--primary-color);
+}
+
+
+/* Grid container */
+
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.calendar-area {
+    display: flex;
+    gap: 3px;
+}
+
+.calendar-area > section {
+    margin: 0 auto;
+}
+
+.calendar-container {
+    order: 1;
+    border-radius: 9px;
+    background-color: rgba(69, 110, 175, 0.8);
+    width: 70%;
+    height: 80vh;
+    padding: 1em 2.5em;
+}
+
+.side-bar {
+    order: 2;
+    border-radius: 9px;
+    width: 30%;
+    background-color: var(--accent-color);
+    padding: 1em 2.5em;
+}
+
+.date-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 10%;
+    margin-bottom: 6px;
+}
+
+.date-bar > section {
+    margin: auto;
+}
+
+.calendar {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 13.5% 13.5% 13.5% 13.5% 13.5% 13.5% 13.5%;
+    grid-template-rows: 4.5% 16.8% 16.8% 16.8% 16.8% 16.8% 16.8%;
+    justify-content: center;
+    padding-bottom: 5px;
+    gap: 0px 5px;
+    margin: 3px;
+}
+
+.previous-month {
+    white-space: nowrap;
+    overflow: hidden;
+    order: 1;
+    width: 33.3%;
+    background-color: lightgrey;
+    border-radius: 9px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.next-month {
+    white-space: nowrap;
+    overflow: hidden;
+    order: 3;
+    width: 33.3%;
+    background-color: lightgrey;
+    border-radius: 9px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.month-shown {
+    order: 2;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 33.3%;
+    color: var(--darker-primary-color);
+}
+
+.show-date {
+    white-space: nowrap;
+    margin: auto;
+    width: 30%;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 110%;
+}
+
+p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 85%;
+    font-weight: bolder;
+    background-color: white;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+#inner {
+    margin: 0;
+    font-weight: bolder;
+    line-height: 94%;
+}
+
+.weekdays {
+    grid-row: 1 / 2;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+label {
+    color: black;
+    font-weight: bolder;
+}
+
+dt, dd {
+    color: black;
+}
+
+button {
+    margin: 2px;
+}
+
+
+/* Custom button styles */
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn:hover, .btn:active {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    font-weight: bold;
+}

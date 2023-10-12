@@ -1,0 +1,107 @@
+/* The font for the body text. */
+/* Work Sans */ 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+
+/* The color palette of the website. */
+
+:root {
+    --primary-color: #2D3F89;
+    --secondary-color: #ffffff;
+    --accent-color: #456EAF;
+}
+
+
+/* General settings for the page. */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
+    color: var(--primary-color);
+    background-image: url('connect-1.jpg');
+    background-color: var(--secondary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* Responsive page layout that matches Joomla's log in module's position on the page */
+
+/* For small and medium devices */
+@media only screen and (max-width: 991px) {
+    .showcase {
+        width: 90%;
+        height: fit-content;
+    }
+}
+/* For large devices */
+@media only screen and (min-width: 992px) {
+    .showcase {
+        width: 70%;
+        height: 100vh;
+    }
+}
+
+
+/* Showcase page stylings */
+
+.showcase {
+    display: block;
+    margin: 0 3em;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.showcase-title {
+    margin-bottom: 1em;
+    overflow: auto;
+}
+
+.showcase-content {
+    margin: 1em 0;
+    flex: 1;
+}
+
+
+/* General styles for the page */
+
+.bg {
+    background-color: rgba(69, 110, 175, 0.8);
+    padding: 2.5em;
+    border-radius: 15px;
+}
+
+h2 {
+    font-weight: 200;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: -0.3em
+}
+
+
+/* Flexbox styles */
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,254 @@
+/* The font for the body text. */
+/* Work Sans */ 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+
+/* The color palette of the website. */
+
+:root {
+    --primary-color: #2D3F89;
+    --secondary-color: #ffffff;
+    --accent-color: #456EAF;
+}
+
+
+/* General settings for the page. */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    min-width: 100%;
+    min-height: 100%;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.5;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+
+/* Styles for the guide text at the top of the component */
+
+.guide-text {
+    margin-bottom: 2em;
+}
+
+
+/* Styles for the "add a new category" and "add a new interest" functions. */
+
+.new-category {
+    margin: 2em 0 1.5em 0;
+}
+
+.new-interest {
+    margin: 1.5em 0 2em 0;
+}
+
+#open-group, #open-interest {
+    min-width: 200px;
+}
+
+.section-bg {
+    padding: 2em 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(69, 110, 175, 0.4);
+    color: var(--secondary-color);
+}
+
+#group, #interest {
+    display: none;
+}
+
+.input-data {
+    font-weight: bold;
+    margin: 2em 0;
+}
+
+.text-input {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    border: solid 2px rgba(139, 139, 139, .3);
+    border-radius: 5px;
+    height: 2.25em;
+}
+
+.action-buttons button {
+    margin: 0 1em;
+    width: 100px;
+}
+
+
+/* Styles for the interest groups and their interests. */
+
+.interest-group {
+    margin: 1em 0;
+}
+
+.interest-group > div {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    max-width: 85%;
+}
+
+.cbox-custom {
+    display: inline-block;
+    margin: 4px 7px;
+    list-style: none;
+    padding: 0;
+}
+
+.cbox-custom label {
+    display: inline-block;
+    margin: 3px 0px;
+    padding: 8px 12px;
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid rgba(139, 139, 139, .3);
+    color: rgba(139, 139, 139, 1);
+    border-radius: 10px;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: all .2s;
+}
+
+.cbox-custom label::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 2px 6px 2px 2px;
+    content: "\f067";
+    transition: transform .3s ease-in-out;
+}
+
+.cbox-custom input[type="checkbox"]:checked + label::before {
+    content: "\f00c";
+    transform: rotate(-360deg);
+    transition: transform .3s ease-in-out;
+}
+
+.cbox-custom input[type="checkbox"]:checked + label {
+    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all .2s;
+}
+
+.cbox-custom input[type="checkbox"] {
+  display: absolute;
+  position: absolute;
+  opacity: 0;
+}
+
+
+/* General styles for the buttons and the layout of the page.*/
+
+h1, h2, h3, p, label, input, select {
+    display: block;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.25rem;
+    margin-bottom: -0.25em;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: -0.25em;
+}
+
+label {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0.25em;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: -0.3em
+}
+
+
+hr {
+    display: block;
+    overflow: visible;
+    margin: 0.75em 0;
+    padding: 0 8em;
+    height: 2px;
+    border: 0;
+    background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color), var(--secondary-color));
+}
+
+
+/* Custom button styles */
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 25px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.btn:active {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+
+/* Flexbox styles */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fxdir-default {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
