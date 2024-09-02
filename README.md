@@ -3,7 +3,7 @@ The project is based on the ‘Nokia Connecting Colleagues Initiative’. The pu
 
 
 
-<div align="center"><img src="https://github.com/Maliha-Tasnim/SEP-2-G16-NOKIA---Connecting-Colleagues-Initiative-Project/blob/master/graphics/project%20poster.png" width="300" height="400"></div>
+<div align="center"><img src="https://github.com/Maliha-Tasnim/SEP-2-G16-NOKIA---Connecting-Colleagues-Initiative-Project/blob/master/graphics/project%20poster.png" width="500" height="600"></div>
 
 
 
