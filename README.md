@@ -3,6 +3,10 @@ The project is based on the ‘Nokia Connecting Colleagues Initiative’. The pu
 
 ![project poster](graphics/project%20poster.png)
 
+
+# Project Demo
+
+
 # Connecting Colleagues
 
 This project focuses on the improvement of the matching algorithm and user interface design of an existing application.
