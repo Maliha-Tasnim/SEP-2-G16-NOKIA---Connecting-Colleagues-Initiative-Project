@@ -1,10 +1,19 @@
 # SEP-2-G16-NOKIA---Connecting-Colleagues-Initiative-Project
 The project is based on the ‘Nokia Connecting Colleagues Initiative’. The purpose of the project is to enhance the quality of the application by developing required algorithm, features and functionalities. 
 
-![project poster](graphics/project%20poster.png)
+
+
+<div align="center"><img src="https://github.com/Maliha-Tasnim/SEP-2-G16-NOKIA---Connecting-Colleagues-Initiative-Project/blob/master/graphics/project%20poster.png" width="300" height="400"></div>
+
 
 
 # Project Demo
+
+
+https://github.com/user-attachments/assets/203b6b65-548e-4cb0-a537-ad07dd39680d
+
+
+
 
 
 # Connecting Colleagues
